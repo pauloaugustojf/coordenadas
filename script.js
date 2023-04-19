@@ -23,6 +23,7 @@ const dataMode = {
   home: {
     content: `
     <h1 class="home">Coordenadas Polares e Retangulares</h1>
+
     <section class="home">
       <p>As coordenadas cartesianas, também chamadas de coordenadas retangulares, utilizam uma distância em cada uma das duas dimensões para localizar um ponto. As coordenadas polares usam um ângulo comparado a um eixo e uma distância. Ambas as coordenadas, podem ser convertidas de uma para outra, facilitando operações matematicas entre as mesmas.</p>
       <canvas></canvas>
