@@ -1,0 +1,146 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  width: 20vw;
+  min-width: 250px;
+  top: 0px;
+  left: 0px;
+  background-color: #5f9ea0;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+}
+
+@media (max-width: 1000px), (orientation: portrait)
+{
+  div.conv  {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    display: none;
+  }
+  main {
+    margin: none;
+    width: 100vw;
+  }
+}
+
+nav, ul{
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  gap: 50px;
+  width: 100%;
+}
+
+nav div{
+  text-align: center;
+  padding: 30px;
+}
+
+ul {
+  gap: 10px;
+}
+
+li{
+  list-style-type: none;
+
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 50px;
+  padding-left: 5px;
+  box-shadow: 0px 0px 3px black;
+  line-height: 50px;
+}
+
+header div{
+ margin-bottom: 20px;
+}
+
+nav a:hover{
+  background-color: #436e70;
+}
+
+nav a.active{
+  background-color: #335557;
+}
+
+main{
+  display: flex;
+  min-height: 100vh;
+  height: min-content;
+  width: 100%;
+  /*margin-left: 20vw;*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main div.conv{
+  display: flex;
+  gap: 30px;
+}
+
+.conv input {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+
+main h1.home {
+  margin: 100px 0px;
+}
+
+main section.home {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
+.home canvas {
+  width: 900px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.home div.coords {
+  width: 900px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+.home div.coords p{
+  display: block;
+  width: 450px;
+}
